@@ -626,11 +626,11 @@ spec:
         ports:
         - containerPort: 6379
         readinessProbe:
-          periodSeconds: 5
+          periodSeconds: 10
           tcpSocket:
             port: 6379
         livenessProbe:
-          periodSeconds: 5
+          periodSeconds: 10
           tcpSocket:
             port: 6379
         volumeMounts:
